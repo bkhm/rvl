@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 15/01/2015, 04:22:41 PM
     Author     : Edgar
 */
@@ -29,7 +29,7 @@ body{
   text-align: center;
   vertical-align:middle;
 }
-[class*="col-md-3"] {
+[class*="col-md-2"] {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #8e0000;
@@ -40,7 +40,7 @@ body{
   text-align: center;
 }
 
-[class*="col-md-6"] {
+[class*="col-xs-4"] {
   padding-top: 15px;
   padding-bottom: 15px;
   min-height: 82px;

@@ -1,6 +1,6 @@
 <?php
 
-require "../mail/conexion.php";
+//require "../mail/conexion.php";
 require "conexion.php";
 
 
@@ -451,41 +451,41 @@ function fecha_completa($fecha)
           <p>Analisis comparativo del comportamiento en los medios de los Candidatos a la <strong>Alcaldia de Guadalajara</strong></p>
 
           <div class="row">
-             <div class="col-md-6">
+             <div class="col-md-9">
                 <div class="row cabecera">
-                    <div class="col-md-6"><strong>Actor</strong></div>
-                    <div class="col-md-3"><strong>No. Medios</strong></div>
-                    <div class="col-md-3"><strong>No. Notas</strong></div>
+                    <div class="col-xs-4"><strong>Medio</strong></div>
+                    <div class="col-md-2"><strong>Noticas</strong></div>
+                    <div class="col-md-2"><strong>Anuncios</strong></div>
+                    <div class="col-md-2"><strong>Cm&sup2; Noticas</strong></div>
+                    <div class="col-md-2"><strong>Cm&sup2; Anuncios</strong></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6"><img src="img/rvl.jpg"> <strong><a href="#RVL">Ricardo Villanueva Lomeli</a></strong></div>
-                    <div class="col-md-3"><strong class="numerosContador"><?= $respMediosVillanueva;?></strong></div>
-                    <div class="col-md-3"><strong class="numerosContador"><?= $respNotasVillanueva;?></strong></div>
+                    <div class="col-xs-4"><img src="img/rvl.jpg"> <strong><a href="#RVL">Informador</a></strong></div>
+                    <div class="col-md-2"><strong class="numerosContador"><?= $respMediosVillanueva;?></strong></div>
+                    <div class="col-md-2"><strong class="numerosContador"><?= $respNotasVillanueva;?></strong></div>
+                    <div class="col-md-2"><strong class="numerosContador">li</strong></div>
+                    <div class="col-md-2"><strong class="numerosContador">li</strong></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6"><img src="img/ear.jpg"> <a href="#EAR"><strong>Enrique Alfaro Ramirez</strong></a></div>
-                    <div class="col-md-3"><strong class="numerosContador"><?= $respMediosAlfaro;?></strong></div>
-                    <div class="col-md-3"><strong class="numerosContador"><?= $respNotasAlfaro;?></strong></div>
+                    <div class="col-xs-4"><img src="img/ear.jpg"> <a href="#EAR"><strong>Mural</strong></a></div>
+                    <div class="col-md-2"><strong class="numerosContador"><?= $respMediosAlfaro;?></strong></div>
+                    <div class="col-md-2"><strong class="numerosContador"><?= $respNotasAlfaro;?></strong></div>
+                    <div class="col-md-2"><strong class="numerosContador">li</strong></div>
+                    <div class="col-md-2"><strong class="numerosContador">li</strong></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6"><img src="img/apf.jpg"><a href="#APF"> <strong>Alfonso Petersen Farah</strong></a></div>
-                    <div class="col-md-3"><strong class="numerosContador"><?= $respMediosPetersen;?></strong></div>
-                    <div class="col-md-3"><strong class="numerosContador"><?= $respNotasPetersen;?></strong></div>
+                    <div class="col-xs-4"><img src="img/apf.jpg"><a href="#APF"> <strong>Milenio</strong></a></div>
+                    <div class="col-md-2"><strong class="numerosContador"><?= $respMediosPetersen;?></strong></div>
+                    <div class="col-md-2"><strong class="numerosContador"><?= $respNotasPetersen;?></strong></div>
+                    <div class="col-md-2"><strong class="numerosContador">li</strong></div>
+                    <div class="col-md-2"><strong class="numerosContador">li</strong></div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6"><img src="img/gcp.jpeg"> <a href="#GCP"><strong>Guillermo Cienfuegos Perez</strong></a></div>
-                    <div class="col-md-3"><strong class="numerosContador"><?= $respMediosLagrimita;?></strong></div>
-                    <div class="col-md-3"><strong class="numerosContador"><?= $respNotasLagrimita;?></strong></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6"><img src="img/cfl.jpg"> <a href="#GCP"><strong>Celia Fausto Lizaola</strong></a></div>
-                    <div class="col-md-3"><strong class="numerosContador"><?= $respMediosFausto;?></strong></div>
-                    <div class="col-md-3"><strong class="numerosContador"><?= $respNotasFausto;?></strong></div>
-                </div>
+
              </div>
-             <div class="col-md-6">
-                 <img src="img/graficaVillanuevaCorte.png" class="img-responsive">
-             </div>
+
+          </div>
+          <div class="col-md-6">
+              <img src="img/graficaVillanuevaCorte.png" class="img-responsive">
           </div>
       </div> <!--Primera Pagina-->
 
