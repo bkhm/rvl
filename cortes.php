@@ -9,6 +9,7 @@ mysql_query("set names 'utf8'");
 $rangoFechas = "";
 $fechaCorte = "";
 //Conseguir rango de fechas a buscar
+echo date('N');
 switch(date('N'))
 {
   case 1:
@@ -314,7 +315,9 @@ $respMediosFausto = mysql_num_rows($NotasFausto);
 
 function fecha_completa($fecha)
 {
+    echo $fecha;
     $subfecha=explode("-",$fecha);
+
     $año=$subfecha[0];
     $mes=$subfecha[1];
     $dia=$subfecha[2];
@@ -460,21 +463,21 @@ function fecha_completa($fecha)
                     <div class="col-md-2"><strong>Cm&sup2; Anuncios</strong></div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-4"><img src="img/rvl.jpg"> <strong><a href="#RVL">Informador</a></strong></div>
+                    <div class="col-xs-4"><a href="#Informador"><img src="img/informador.jpg"></a></div>
                     <div class="col-md-2"><strong class="numerosContador"><?= $respMediosVillanueva;?></strong></div>
                     <div class="col-md-2"><strong class="numerosContador"><?= $respNotasVillanueva;?></strong></div>
                     <div class="col-md-2"><strong class="numerosContador">li</strong></div>
                     <div class="col-md-2"><strong class="numerosContador">li</strong></div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-4"><img src="img/ear.jpg"> <a href="#EAR"><strong>Mural</strong></a></div>
+                    <div class="col-xs-4"> <a href="#Mural"><img src="img/mural.jpg"></a></div>
                     <div class="col-md-2"><strong class="numerosContador"><?= $respMediosAlfaro;?></strong></div>
                     <div class="col-md-2"><strong class="numerosContador"><?= $respNotasAlfaro;?></strong></div>
                     <div class="col-md-2"><strong class="numerosContador">li</strong></div>
                     <div class="col-md-2"><strong class="numerosContador">li</strong></div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-4"><img src="img/apf.jpg"><a href="#APF"> <strong>Milenio</strong></a></div>
+                    <div class="col-xs-4"><a href="#Milenio"><img src="img/milenio.jpg"></a></div>
                     <div class="col-md-2"><strong class="numerosContador"><?= $respMediosPetersen;?></strong></div>
                     <div class="col-md-2"><strong class="numerosContador"><?= $respNotasPetersen;?></strong></div>
                     <div class="col-md-2"><strong class="numerosContador">li</strong></div>
@@ -487,45 +490,28 @@ function fecha_completa($fecha)
           <div class="col-md-6">
               <img src="img/graficaVillanuevaCorte.png" class="img-responsive">
           </div>
+          <div class="col-md-6">
+              <img src="img/graficaVillanuevaCorte.png" class="img-responsive">
+          </div>
+          <div class="col-md-6">
+              <img src="img/graficaVillanuevaCorte.png" class="img-responsive">
+          </div>
+          <div class="col-md-6">
+              <img src="img/graficaVillanuevaCorte.png" class="img-responsive">
+          </div>
       </div> <!--Primera Pagina-->
 
+
       <div class="container">
           <div class="page-header">
-            <h1>Desglose Ricardo Villanueva Lomelí</h1>
+            <h1>Informador</h1>
             <p class="lead"><?= $fechaCorte ?></p>
-            <a id="RVL" href="#menu">Arriba</a>
+            <a id="Informador" href="#menu">Arriba</a>
           </div>
           <div class="row">
               <div class="col-md-6">
                   <div class="row cabecera">
-                      <h3><img src="img/rvl.jpg">  Ricardo Villanueva Lomelí</h3>
-                  </div>
-                  <div class="row">
-                      <img src="img/historicoVillanueva.png" class="img-responsive">
-                  </div>
-              </div>
-              <div class="col-md-6">
-                  <div class="row cabecera">
-                      <div class="col-md-4"><strong>Medio</strong></div>
-                      <div class="col-md-4"><strong>Total</strong></div>
-                      <div class="col-md-4"><strong>Testigos</strong></div>
-                  </div>
-                  <?= $tablaVillanueva ?>
-
-              </div>
-          </div>
-      </div><!--Primera Pagina Segundo Bloque-->
-
-      <div class="container">
-          <div class="page-header">
-            <h1>Desglose Enrique Alfaro Ramírez</h1>
-            <p class="lead"><?= $fechaCorte ?></p>
-            <a id="EAR" href="#menu">Arriba</a>
-          </div>
-          <div class="row">
-              <div class="col-md-6">
-                  <div class="row cabecera">
-                      <h3><img src="img/ear.jpg"> Enrique Alfaro Ramírez</h3>
+                      <h3><img class="img-tasg" src="img/informador.jpg"> El Informador </h3>
                   </div>
                   <div class="row">
                       <img src="img/historicoAlfaro.png" class="img-responsive">
@@ -541,18 +527,18 @@ function fecha_completa($fecha)
                   <?= $tablaAlfaro ?>
               </div>
           </div>
-      </div><!--Segunda Pagina Segundo Bloque-->
+      </div><!--Primera Pagina Segundo Bloque-->
 
       <div class="container">
           <div class="page-header">
-            <h1>Desglose Alfonso Petersen Farah</h1>
+            <h1>Mural</h1>
             <p class="lead"><?= $fechaCorte ?></p>
-            <a id="APF" href="#menu">Arriba</a>
+            <a id="Mural" href="#menu">Arriba</a>
           </div>
           <div class="row">
               <div class="col-md-6">
                   <div class="row cabecera">
-                      <h3><img src="img/apf.jpg"> Alfonso Petersen Farah</h3>
+                      <h3><img class="img-tasg" src="img/mural.jpg"> Mural </h3>
                   </div>
                   <div class="row">
                       <img src="img/historicoPetersen.png" class="img-responsive">
@@ -567,18 +553,18 @@ function fecha_completa($fecha)
                   <?= $tablaPetersen ?>
               </div>
           </div>
-      </div><!--Tercera Pagina Segundo Bloque-->
+      </div><!--Segunda Pagina Segundo Bloque-->
 
       <div class="container">
           <div class="page-header">
-            <h1>Desglose Guillermo Cienfuegos Pérez</h1>
+            <h1> Milenio </h1>
             <p class="lead"><?= $fechaCorte ?></p>
-            <a id="GCP" href="#menu">Arriba</a>
+            <a id="Milenio" href="#menu">Arriba</a>
           </div>
           <div class="row">
               <div class="col-md-6">
                   <div class="row cabecera">
-                      <h3><img src="img/gcp.jpeg"> Guillermo Cienfuegos Pérez</h3>
+                      <h3><img  class="img-tasg" src="img/milenio.jpg"> Milenio </h3>
                   </div>
                   <div class="row">
                       <img src="img/historicoCienfuegos.png" class="img-responsive">
@@ -593,7 +579,7 @@ function fecha_completa($fecha)
                   <?= $tablaLagrimita ?>
               </div>
           </div>
-      </div><!--Cuarta Pagina Segundo Bloque-->
+      </div><!--Tercera Pagina Segundo Bloque-->
 
       <div class="container">
           <div class="page-header">

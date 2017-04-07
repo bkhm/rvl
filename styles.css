@@ -67,3 +67,7 @@ a{
 a:hover{
     color: rgba(142, 0, 0, 0.63);
 }
+[class*="img-tasg"]{
+/*img{*/
+  height: 50px;
+}
